@@ -1,0 +1,246 @@
+
+// Circle
+
+@keyframes circle-1 {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes circle-6 {
+    0% {
+        height: 20px;
+        width: 20px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@keyframes circle-7 {
+    0% {
+        scale: 0.5;
+        opacity: 1;
+    }
+    100% {
+        scale: 1.2;
+        opacity: 0;
+    }
+}
+
+@keyframes circle-14 {
+    0% {
+        border-bottom: 4px dotted $blue-600;
+    }
+}
+
+.circle-1 {
+    @include circle-style();
+    @include animation-linear(circle-1, 0.6s);
+
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid $blue-600;
+    border-right: 4px solid $blue-600;
+    border-top: 4px solid $blue-600;
+}
+
+.circle-2 {
+    @include circle-style();
+    @include display-center();
+
+    border: 4px solid $gray-200;
+
+    .circle-2 {
+        @include circle-style();
+        @include animation-linear(circle-1, 0.6s);
+    
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        border-bottom: 4px solid $blue-600;
+        border-top: 4px solid transparent;
+    }
+}
+
+.circle-3 {
+    @include circle-style();
+    @include animation-linear(circle-1, 0.6s);
+
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid $blue-600;
+    border-top: 4px solid $blue-600;
+}
+
+.circle-4 {
+    @include circle-style();
+    @include display-center();
+    @include animation-none-linear(circle-1, 1s);
+
+    border: 2px solid $gray-200;
+
+    .circle-4 {
+        @include circle-style();
+    
+        width: 10px;
+        height: 10px;
+        bottom: -19px;
+        position: relative;
+        background-color: $blue-800;
+    }
+}
+
+.circle-5 {
+    @include circle-style();
+    @include display-center();
+
+    border: 4px solid $gray-200;
+
+    .circle-5 {
+        @include circle-style();
+        @include animation-linear(circle-1, 0.6s);
+    
+        border-bottom: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        border-top: 4px dashed $blue-600;
+    }
+}
+
+.circle-6 {
+    @include circle-style();
+    @include display-center();
+    
+    background-color: rgba(144, 202, 249, 0.600);
+    height: 50px;
+    width: 50px;
+    
+    .circle-6 {
+        @include circle-style();
+        @include animation-linear(circle-6, 1s);
+        
+        background-color: $blue-600;
+    }
+}
+
+.circle-7 {
+    @include circle-style();
+    @include display-center();
+    @include animation-linear(circle-7, 0.8s);
+    
+    border: 3px solid $blue-600;
+}
+
+.circle-8 {
+    @include circle-style();
+    @include display-center();
+    @include animation-linear(circle-7, 1.5s);
+    
+    border: 3px solid $blue-600;
+
+    .circle-8 {
+        @include circle-style();
+        @include display-center();
+        @include animation-linear(circle-7, 1.5s);
+        @include animation-none-linear(circle-1, 0.4s);
+    
+        border-left: 3px solid transparent;
+        border-bottom: 3px solid $blue-600;
+        border-right: 3px solid $blue-600;
+        border-top: 3px solid $blue-600;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.circle-9 {
+    @include circle-style();
+    @include display-center();
+    @include animation-linear(circle-1, 1.8s);
+    
+    background-color: rgba(144, 202, 249, 0.600);
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid $blue-600;
+    border-right: 3px solid $blue-600;
+    border-top: 3px solid $blue-600;
+}
+
+.circle-10 {
+    @include circle-style();
+    @include display-center();
+    @include animation-linear(circle-1, 1.8s);
+    
+    background-color: rgba(144, 202, 249, 0.600);
+    border-left: 3px solid transparent;
+    border-bottom: 3px dashed $blue-600;
+    border-right: 3px dashed $blue-600;
+    border-top: 3px dashed $blue-600;
+}
+
+.circle-11 {
+    @include circle-style();
+    @include display-center();
+    @include animation-linear(circle-1, 1.8s);
+    
+    border: 3px dashed $blue-600;
+}
+
+.circle-12 {
+    @include circle-style();
+    @include display-center();
+    
+    border: 3px solid $blue-600;
+
+    .circle-12 {
+        @include circle-style();
+        @include display-center();
+        @include animation-linear(circle-7, 1.5s);
+        @include animation-none-linear(circle-1, 0.8s);
+    
+        border-right: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-bottom: 3px solid $blue-600;
+        border-top: 3px solid transparent;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.circle-13 {
+    @include circle-style();
+    @include display-center();
+    @include animation-none-linear(circle-1, 1s);
+    
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid $blue-600;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+
+    .circle-13 {
+        @include circle-style();
+        @include display-center();
+    
+        border: 3px solid $blue-600;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.circle-14 {
+    @include circle-style();
+    @include display-center();
+    @include animation-none-linear(circle-1, 0.8s);
+    
+    border: 4px solid $gray-200;
+    
+    .circle-14 {
+        @include circle-style();
+        @include display-center();
+        @include animation-linear(circle-14, 1s);
+    
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid $blue-600;
+        border-left: 4px solid transparent;
+        border-top: 4px solid transparent;
+    }
+}

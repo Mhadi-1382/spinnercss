@@ -1,0 +1,36 @@
+
+// Mixins
+
+@mixin animation-linear($animation-name, $animation-time) {
+    animation: $animation-name $animation-time linear infinite;
+}
+@mixin animation-none-linear($animation-name, $animation-time) {
+    animation: $animation-name $animation-time infinite;
+}
+
+@mixin display-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin circle-style() {
+    border-radius: var(--border-radius-full);
+    height: 40px;
+    width: 40px;
+}
+
+@mixin dots-style() {
+    background-color: $blue-500;
+    border-radius: var(--border-radius-full);
+    margin: 0 3px;
+    height: 10px;
+    width: 10px;
+}
+
+@mixin line-style() {
+    background-color: $blue-500;
+    border-radius: var(--border-radius-full);
+    height: 8px;
+    width: 50px;
+}

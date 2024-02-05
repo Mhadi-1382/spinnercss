@@ -1,0 +1,405 @@
+
+// Dots
+
+@keyframes dots-1 {
+    0% {
+        transform: scale(0.8) translate3d(10px, 20px, 30px);
+    }
+    100% {
+        transform: scale(0.4);
+    }
+}
+
+@keyframes dots-2 {
+    100% {
+        transform: scale(0.7) matrix(10px, 20px, 30px);
+        height: 23px;
+        background-color: $blue-200;
+    }
+}
+
+@keyframes dots-3 {
+    100% {
+        transform: scale(0.6) translateY(10px);
+        padding: 0 10px;
+        background-color: $blue-200;
+    }
+}
+
+@keyframes dots-4 {
+    100% {
+        transform: scale(0.5);
+        background-color: $blue-200;
+    }
+}
+
+@keyframes dots-5 {
+    100% {
+        transform: skew(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes dots-7 {
+    100% {
+        transform: skewY(360deg);
+    }
+}
+
+@keyframes dots-8 {
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        scale: 0.2;
+        opacity: 0;
+    }
+}
+
+@keyframes dots-9 {
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(40px);
+        scale: 0.2;
+        opacity: 0;
+    }
+}
+
+@keyframes dots-10 {
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(40px);
+        scale: 1.2;
+        opacity: 0;
+    }
+}
+
+@keyframes dots-11 {
+    50% {
+        transform: scale(0.7) matrix(10px, 20px, 30px);
+    }
+    100% {
+        transform: translateX(40px);
+        scale: 0.4;
+        opacity: 0;
+    }
+}
+
+@keyframes dots-12 {
+    50% {
+        transform: scale(0.7) matrix(10px, 20px, 30px);
+    }
+    100% {
+        transform: translateX(-40px);
+        scale: 0.4;
+        opacity: 0;
+    }
+}
+
+@keyframes dots-13 {
+    50% {
+        transform: scale(0.5);
+        background-color: $blue-200;
+        
+    }
+    100% {
+        transform: scale(0.8) translate3d(-5px, -20px, -10px) translateX(-40px);
+    }
+}
+
+@keyframes dots-14 {
+    50% {
+        transform: scale(0.8);
+        background-color: $blue-200;
+    }
+    100% {
+        transform: scale(0.2) translateY(-25px);
+    }
+}
+
+.dots-1 {
+    @include display-center();
+
+    .dots-1:nth-child(1) {
+        @include dots-style();
+        @include animation-none-linear(dots-1, 0.8s);
+    }
+    .dots-1:nth-child(2) {
+        @include dots-style();
+        @include animation-none-linear(dots-1, 1s);
+    }
+    .dots-1:nth-child(3) {
+        @include dots-style();
+        @include animation-none-linear(dots-1, 1.5s);
+    }
+}
+
+.dots-2 {
+    @include display-center();
+
+    .dots-2:nth-child(1) {
+        @include dots-style();
+        @include animation-none-linear(dots-2, 0.8s);
+
+        width: 8px;
+    }
+    .dots-2:nth-child(2) {
+        @include dots-style();
+        @include animation-none-linear(dots-2, 1s);
+
+        width: 8px;
+    }
+    .dots-2:nth-child(3) {
+        @include dots-style();
+        @include animation-none-linear(dots-2, 1.5s);
+
+        width: 8px;
+    }
+}
+
+.dots-3 {
+    @include display-center();
+
+    .dots-3 {
+        @include dots-style();
+        @include animation-none-linear(dots-3, 0.6s);
+    }
+}
+
+.dots-4 {
+    @include display-center();
+
+    .dots-4:nth-child(1) {
+        @include dots-style();
+        @include animation-none-linear(dots-4, 0.5s);
+    }
+    .dots-4:nth-child(2) {
+        @include dots-style();
+        @include animation-none-linear(dots-4, 1s);
+    }
+    .dots-4:nth-child(3) {
+        @include dots-style();
+        @include animation-none-linear(dots-4, 1.5s);
+    }
+    .dots-4:nth-child(4) {
+        @include dots-style();
+        @include animation-none-linear(dots-4, 2s);
+    }
+}
+
+.dots-5 {
+    @include display-center();
+    overflow: hidden;
+
+    .dots-5:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-5, 1.5s);
+    }
+    .dots-5:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-5, 1s);
+    }
+}
+
+.dots-6 {
+    @include display-center();
+    overflow: hidden;
+
+    .dots-6:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-5, 1.5s);
+    }
+    .dots-6:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-5, 1.5s);
+    }
+    .dots-6:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-5, 1s);
+    }
+    .dots-6:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-5, 1s);
+    }
+}
+
+.dots-7 {
+    @include display-center();
+    overflow: hidden;
+
+    .dots-7 {
+        @include dots-style();
+        @include animation-linear(dots-7, 1s);
+    }
+}
+
+.dots-8 {
+    @include display-center();
+
+    .dots-8:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-8, 1s);
+    }
+    .dots-8:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-8, 1.2s);
+    }
+    .dots-8:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-8, 1.4s);
+    }
+    .dots-8:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-8, 1.6s);
+    }
+}
+
+.dots-9 {
+    @include display-center();
+
+    .dots-9:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-9, 1s);
+    }
+    .dots-9:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-9, 1.2s);
+    }
+    .dots-9:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-9, 1.4s);
+    }
+    .dots-9:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-9, 1.6s);
+    }
+}
+
+.dots-10 {
+    @include display-center();
+
+    .dots-10:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-10, 1s);
+    }
+    .dots-10:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-10, 1.2s);
+    }
+    .dots-10:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-10, 1.4s);
+    }
+    .dots-10:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-10, 1.6s);
+    }
+}
+
+.dots-11 {
+    @include display-center();
+
+    .dots-11:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-11, 1s);
+    }
+    .dots-11:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-11, 1.2s);
+    }
+    .dots-11:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-11, 1.4s);
+    }
+    .dots-11:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-11, 1.6s);
+    }
+    .dots-11:nth-child(5) {
+        @include dots-style();
+        @include animation-linear(dots-11, 1.7s);
+    }
+    .dots-11:nth-child(6) {
+        @include dots-style();
+        @include animation-linear(dots-11, 1.8s);
+    }
+}
+
+.dots-12 {
+    @include display-center();
+
+    .dots-12:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-12, 1s);
+    }
+    .dots-12:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-12, 1.2s);
+    }
+    .dots-12:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-12, 1.4s);
+    }
+    .dots-12:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-12, 1.6s);
+    }
+    .dots-12:nth-child(5) {
+        @include dots-style();
+        @include animation-linear(dots-12, 1.7s);
+    }
+    .dots-12:nth-child(6) {
+        @include dots-style();
+        @include animation-linear(dots-12, 1.8s);
+    }
+}
+
+.dots-13 {
+    @include display-center();
+
+    .dots-13:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-13, 1s);
+    }
+    .dots-13:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-13, 1.2s);
+    }
+    .dots-13:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-13, 1.4s);
+    }
+    .dots-13:nth-child(4) {
+        @include dots-style();
+        @include animation-linear(dots-13, 1.6s);
+    }
+    .dots-13:nth-child(5) {
+        @include dots-style();
+        @include animation-linear(dots-13, 1.7s);
+    }
+    .dots-13:nth-child(6) {
+        @include dots-style();
+        @include animation-linear(dots-13, 1.8s);
+    }
+}
+
+.dots-14 {
+    @include display-center();
+
+    .dots-14:nth-child(1) {
+        @include dots-style();
+        @include animation-linear(dots-14, 1s);
+    }
+    .dots-14:nth-child(2) {
+        @include dots-style();
+        @include animation-linear(dots-14, 1.2s);
+    }
+    .dots-14:nth-child(3) {
+        @include dots-style();
+        @include animation-linear(dots-14, 1.4s);
+    }
+}

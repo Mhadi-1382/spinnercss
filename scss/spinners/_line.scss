@@ -1,0 +1,106 @@
+
+// Line
+
+@keyframes line-1 {
+    100% {
+        width: 200px;
+    }
+}
+
+@keyframes line-2 {
+    100% {
+        width: 200px;
+        transform: translateX(250px);
+    }
+}
+
+@keyframes line-3 {
+    50% {
+        background-color: $blue-200;
+    }
+    100% {
+        transform: translateX(250px);
+        background-color: $blue-100;
+    }
+}
+
+@keyframes line-4 {
+    50% {
+        background-color: $blue-200;
+        width: 10px;
+    }
+    100% {
+        transform: translateX(250px);
+        background-color: $blue-100;
+    }
+}
+
+.line-1 {
+    @include display-center();
+    @include line-style();
+
+    background-color: $blue-50;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 200px;
+
+    .line-1 {
+        @include line-style();
+        @include animation-linear(line-1, 1.5s);
+
+        width: 0px;
+    }
+}
+
+.line-2 {
+    @include display-center();
+    @include line-style();
+
+    background-color: $blue-50;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 200px;
+
+    .line-2 {
+        @include line-style();
+        @include animation-linear(line-2, 2s);
+
+        width: 0px;
+    }
+}
+
+.line-3 {
+    @include display-center();
+    @include line-style();
+
+    background-color: $blue-50;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 200px;
+
+    .line-3 {
+        @include line-style();
+        @include animation-linear(line-3, 1.8s);
+    }
+}
+
+.line-4 {
+    @include display-center();
+    @include line-style();
+
+    background-color: $blue-50;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 200px;
+
+    .line-4:nth-child(1) {
+        @include line-style();
+        @include animation-linear(line-4, 1.2s);
+    }
+    .line-4:nth-child(2) {
+        @include line-style();
+        @include animation-linear(line-4, 2s);
+
+        background-color: $blue-700;
+    }
+}
