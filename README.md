@@ -13,6 +13,8 @@ Give your website more personality with ready-to-use spinners featuring stunning
 
 <a href="https://mhadi-1382.github.io/spinnercss/">View Website</a>
 
+<a href="https://dev.to/mhadi2003/spinnercss-32-different-types-of-spinners-1gcf">View On Dev.to</a>
+
 <br>
 
 ## Documents
