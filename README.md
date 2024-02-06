@@ -57,6 +57,6 @@ resizing the width and height, the size of the border and the assignment of the 
 
 <img src="https://github.com/Mhadi-1382/spinnercss/blob/master/Spinnercss_Website_Cover.png" alt="spinnercss" description="Improve your website with ready-made spinnercss. Give your website more personality with ready-to-use spinners featuring stunning designs and layouts.">
 
-**spinnercss Website Project:** <a href=""></a>
+**spinnercss Website Project:** <a href="https://dribbble.com/shots/23584966-spinnercss-Website-Project">https://dribbble.com/shots/23584966-spinnercss-Website-Project</a>
 <br>
-**spinnercss Logo Project:** <a href=""></a>
+**spinnercss Logo Project:** <a href="https://dribbble.com/shots/23584953-spinnercss-Logo-Project">https://dribbble.com/shots/23584953-spinnercss-Logo-Project</a>
